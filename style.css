@@ -1,0 +1,104 @@
+/* =========================
+   Global Styles
+   ========================= */
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    
+    /* =========================
+       Header
+       ========================= */
+    .header {
+      display: flex; /* Flexbox for horizontal layout */
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #004080;
+      color: #fff;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
+    .nav ul {
+      list-style: none;
+      display: flex; /* Flexbox for nav links */
+      gap: 1rem;
+    }
+    
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    /* =========================
+       Hero Section
+       ========================= */
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      background: #e6f2ff;
+    }
+    
+    .hero h1 {
+      margin-bottom: 1rem;
+    }
+    
+    /* =========================
+       Main Content (Grid)
+       ========================= */
+    .main-content {
+      display: grid; /* Grid layout */
+      grid-template-columns: 1fr; /* 1 column on mobile */
+      gap: 1rem;
+      padding: 2rem;
+    }
+    
+    .card {
+      background: #f2f2f2;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    /* =========================
+       Footer
+       ========================= */
+    .footer {
+      display: flex; /* Flexbox for centered footer */
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      background: #004080;
+      color: white;
+    }
+    
+    /* =========================
+       Responsive Breakpoints
+       ========================= */
+    
+    /* Tablets (≥ 600px) */
+    @media (min-width: 600px) {
+      .main-content {
+        grid-template-columns: repeat(2, 1fr); /* 2-column grid */
+      }
+    }
+    
+    /* Desktops (≥ 900px) */
+    @media (min-width: 900px) {
+      .main-content {
+        grid-template-columns: repeat(3, 1fr); /* 3-column grid */
+      }
+    }
+    
